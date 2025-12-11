@@ -9,15 +9,36 @@ type IconMapping = Record<SymbolViewProps['name'], ComponentProps<typeof Materia
 type IconSymbolName = keyof typeof MAPPING;
 
 /**
- * Add your SF Symbols to Material Icons mappings here.
+ * SF Symbols to Material Icons mappings.
  * - see Material Icons in the [Icons Directory](https://icons.expo.fyi).
  * - see SF Symbols in the [SF Symbols](https://developer.apple.com/sf-symbols/) app.
  */
 const MAPPING = {
+  // Navigation
   'house.fill': 'home',
-  'paperplane.fill': 'send',
-  'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'chevron.left': 'chevron-left',
+  // Tabs
+  'tv.fill': 'live-tv',
+  'calendar': 'event',
+  'gearshape.fill': 'settings',
+  'star.fill': 'star',
+  'heart.fill': 'favorite',
+  // Player
+  'play.fill': 'play-arrow',
+  'pause.fill': 'pause',
+  'pip.fill': 'picture-in-picture-alt',
+  'speaker.wave.2.fill': 'volume-up',
+  'speaker.slash.fill': 'volume-off',
+  // Actions
+  'plus': 'add',
+  'xmark': 'close',
+  'magnifyingglass': 'search',
+  'arrow.clockwise': 'refresh',
+  'trash.fill': 'delete',
+  // Status
+  'exclamationmark.triangle.fill': 'warning',
+  'checkmark.circle.fill': 'check-circle',
 } as IconMapping;
 
 /**
